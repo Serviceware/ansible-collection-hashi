@@ -72,3 +72,5 @@ nomad__client_plugin_docker_allow_privileged: false
 nomad__client_plugin_docker_volume_enabled: false
 # raw_exec
 nomad__client_plugin_raw_exec_enabled: false
+
+nomad__client_node_pool: null

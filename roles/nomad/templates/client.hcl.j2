@@ -1,6 +1,9 @@
 # {{ ansible_managed }}
 client {
   enabled = true
+{% if nomad__client_node_pool is not none %}
+  node_pool = "{{ nomad__client_node_pool }}"
+{% endif %}
 {% if nomad__client_network_interface is not none %}
   network_interface = "{{ nomad__client_network_interface }}"
 {% endif %}
